@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#170d27">
+<title>For Kakali — With Love, Koushik</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Great+Vibes&family=Playfair+Display:wght@500;600;700&display=swap');
+:root{--pink:#ff8eb5;--rose:#ff5d98;--cream:#fff3f7;--lav:#c8a6ff;--gold:#ffd99a}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:#120b20;color:var(--cream);font-family:'DM Sans',sans-serif;overflow-x:hidden}
+body:before{content:"";position:fixed;inset:0;z-index:-2;background:radial-gradient(ellipse at 15% 15%,#54234d 0,transparent 38%),radial-gradient(ellipse at 85% 25%,#30235d 0,transparent 40%),radial-gradient(ellipse at 50% 100%,#4b1d46 0,transparent 50%),#120b20}
+.stars{position:fixed;inset:0;pointer-events:none;z-index:-1;background-image:radial-gradient(2px 2px at 20% 30%,#fff9 50%,transparent 60%),radial-gradient(1px 1px at 70% 20%,#fff8 50%,transparent 60%),radial-gradient(2px 2px at 80% 70%,#fff7 50%,transparent 60%),radial-gradient(1px 1px at 35% 80%,#fff8 50%,transparent 60%);background-size:280px 240px;animation:twinkle 5s ease-in-out infinite alternate}
+@keyframes twinkle{to{opacity:.45;transform:translateY(-8px)}}
+section{padding:90px 22px;position:relative}
+.wrap{max-width:1050px;margin:auto;text-align:center}
+.eyebrow{text-transform:uppercase;letter-spacing:4px;font-size:.72rem;color:#ffc1d7;font-weight:700}
+.script{font-family:'Great Vibes',cursive;font-weight:400}
+h1,h2,h3{font-family:'Playfair Display',serif}
+h1{font-size:clamp(3.2rem,9vw,7.5rem);line-height:.98;margin:20px 0;color:#fff;text-shadow:0 0 35px #ff80b777}
+h1 span{display:block;color:#ff9fbe}
+h2{font-size:clamp(2.2rem,5vw,4rem);margin:12px 0 20px}
+.lead{color:#f2dce9;line-height:1.8;max-width:650px;margin:18px auto;font-size:1.05rem}
+.btn{border:0;border-radius:999px;padding:15px 25px;font:700 .95rem 'DM Sans';cursor:pointer;color:#39132b;background:linear-gradient(110deg,#ffd5e3,#ff8eb5 55%,#ffd99a);box-shadow:0 8px 30px #ff78ac45;transition:.25s}
+.btn:hover{transform:translateY(-3px);box-shadow:0 12px 36px #ff78ac70}
+.btn.secondary{background:#ffffff12;color:#ffe7f0;border:1px solid #ffffff38;box-shadow:none}
+.hero{min-height:100svh;display:grid;place-items:center;padding-top:65px}
+.hero-inner{max-width:850px}
+.hero .script{font-size:clamp(2rem,5vw,3.4rem);color:#ffd5e3;margin:15px 0}
+.hero p{max-width:570px;margin:20px auto 30px;color:#f3dbe8;line-height:1.8}
+.glow-heart{font-size:2rem;display:inline-block;filter:drop-shadow(0 0 15px #ff6da7);animation:heartbeat 1.4s infinite}
+@keyframes heartbeat{50%{transform:scale(1.22)}}
+.scroll-hint{position:absolute;bottom:24px;color:#e9c5d8;font-size:.8rem;letter-spacing:2px}
+.pill{display:inline-flex;gap:9px;align-items:center;padding:10px 16px;border:1px solid #ffffff25;background:#ffffff0c;border-radius:99px;color:#ffe5ef;font-size:.85rem}
+.cake{font-size:clamp(6rem,17vw,10rem);margin:20px 0 8px;filter:drop-shadow(0 12px 25px #ff75ad55);animation:bob 3s ease-in-out infinite}
+@keyframes bob{50%{transform:translateY(-12px) rotate(2deg)}}
+.card{background:linear-gradient(145deg,#ffffff14,#ffffff08);border:1px solid #ffffff24;border-radius:26px;padding:clamp(25px,5vw,48px);box-shadow:0 20px 70px #0003;backdrop-filter:blur(14px)}
+.letter{max-width:760px;margin:30px auto;text-align:left;line-height:2;color:#f9e8f0;font-size:1.02rem}
+.letter .salute{font-family:'Great Vibes';font-size:2.5rem;color:#ffb6ce}
+.letter .sign{font-family:'Great Vibes';font-size:2.3rem;color:#ffb6ce;text-align:right;margin-top:15px}
+.controls{display:flex;gap:12px;justify-content:center;flex-wrap:wrap;margin-top:22px}
+.music-note{font-size:1.5rem;margin-right:6px}
+.gallery-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:15px;margin:35px auto;max-width:800px}
+.memory{min-height:155px;border-radius:20px;border:1px dashed #ffb6ce77;background:linear-gradient(145deg,#ff9cbd20,#c8a6ff16);display:grid;place-items:center;padding:18px;color:#f7dce9}
+.memory strong{display:block;font-family:'Playfair Display';font-size:1.1rem;margin:7px}
+.memory small{opacity:.7}
+.wish-box{max-width:620px;margin:25px auto}
+.wish-message{min-height:60px;color:#ffe0eb;font-family:'Great Vibes';font-size:2.2rem;margin:20px}
+footer{padding:45px 20px 60px;text-align:center;color:#d8b8cb}
+footer .script{font-size:2.5rem;color:#ffabc7}
+.float{position:fixed;bottom:-40px;z-index:5;pointer-events:none;animation:rise linear forwards;opacity:.8}
+@keyframes rise{to{transform:translateY(-110vh) rotate(35deg);opacity:0}}
+.confetti{position:fixed;top:-15px;width:8px;height:13px;z-index:20;pointer-events:none;animation:fall 3.2s linear forwards}
+@keyframes fall{to{transform:translateY(110vh) rotate(720deg);opacity:.1}}
+.modal{position:fixed;inset:0;z-index:30;display:none;place-items:center;background:#080510c9;padding:20px}
+.modal.show{display:grid}
+.modal-card{max-width:520px;text-align:center;padding:42px 30px;border-radius:26px;background:linear-gradient(145deg,#4d2049,#211735);border:1px solid #ffb6ce66;box-shadow:0 25px 90px #0008}
+.modal-card .script{font-size:3rem;color:#ffc1d7}
+.candle-row{font-size:2.5rem;letter-spacing:8px;cursor:pointer;user-select:none}
+.tiny{font-size:.8rem;color:#d9bbce}
+#musicStatus{font-size:.78rem;color:#e9c5d8;margin-top:9px}
+@media(max-width:650px){section{padding:70px 18px}.gallery-grid{grid-template-columns:1fr}.memory{min-height:115px}.lead{font-size:.98rem}}
+</style>
+</head>
+<body>
+<div class="stars"></div>
+<section class="hero" id="home">
+ <div class="wrap hero-inner">
+  <div class="pill">✦ A little universe made just for you ✦</div>
+  <div class="glow-heart" style="margin-top:28px">♡</div>
+  <div class="script">For someone wonderful</div>
+  <h1>Happy Birthday,<span>Kakali!</span></h1>
+  <p>Today, the world gets to celebrate you — and I get another reason to tell you how special you are.</p>
+  <button class="btn" id="openBtn">Open your surprise <span>💝</span></button>
+  <div id="musicStatus">♫ Your birthday melody is waiting inside</div>
+ </div>
+ <div class="scroll-hint">SCROLL TO EXPLORE · ↓</div>
+</section>
+
+<section id="celebrate">
+ <div class="wrap">
+  <div class="eyebrow">Today is all about you</div>
+  <div class="cake" aria-label="birthday cake">🎂</div>
+  <h2>Make a wish, <span style="color:#ff9fbe">Kakali</span> ✨</h2>
+  <p class="lead">May this new chapter bring you a thousand reasons to smile, dreams that come true, and little moments that turn into beautiful memories.</p>
+  <div class="candle-row" id="candles" title="Tap the candles">🕯️ 🕯️ 🕯️</div>
+  <p class="tiny" id="candleHint">Tap the candles to make your birthday wish come true.</p>
+  <div class="controls">
+   <button class="btn" id="wishBtn">Make a wish ✨</button>
+   <button class="btn secondary" id="hugBtn">Send a hug 🤗</button>
+  </div>
+  <div class="wish-message" id="wishMessage" aria-live="polite"></div>
+ </div>
+</section>
+
+<section id="letter">
+ <div class="wrap">
+  <div class="eyebrow">A note from the heart</div>
+  <h2>A little letter <span style="color:#ff9fbe">for you</span></h2>
+  <div class="card">
+   <div class="letter">
+    <div class="salute">Dear Kakali,</div>
+    I may not always find the perfect words, but today I want you to know just how special you are. Your smile can make an ordinary day feel brighter, and your presence can turn simple moments into memories worth keeping.<br><br>
+    On your birthday, I wish you endless happiness, good health, courage for every new dream, and all the love your heart can hold. May life surprise you in the loveliest ways. Keep being your wonderful self, keep shining, and never stop smiling.<br><br>
+    You deserve beautiful things — today and every day. ❤️
+    <div class="sign">With lots of love,<br>Koushik 💗</div>
+   </div>
+  </div>
+ </div>
+</section>
+
+<section id="memories">
+ <div class="wrap">
+  <div class="eyebrow">Little things, big feelings</div>
+  <h2>Moments to <span style="color:#ff9fbe">treasure</span></h2>
+  <p class="lead">A few little reminders of the happiness you bring. You can replace these cards with your favourite photos before sharing the page.</p>
+  <div class="gallery-grid">
+   <div class="memory"><div>🌷<strong>Your beautiful smile</strong><small>A little light on any day</small></div></div>
+   <div class="memory"><div>🌙<strong>Sweet memories</strong><small>The moments worth keeping</small></div></div>
+   <div class="memory"><div>✨<strong>All your dreams</strong><small>May every one find its way</small></div></div>
+  </div>
+ </div>
+</section>
+
+<section id="final">
+ <div class="wrap">
+  <div class="glow-heart">♥</div>
+  <div class="eyebrow">One last thing</div>
+  <h2>Keep shining, <span style="color:#ff9fbe">Kakali!</span></h2>
+  <p class="lead">I hope your day is as lovely, bright, and unforgettable as you are. Here's to more laughter, more adventures, and countless happy tomorrows.</p>
+  <button class="btn" id="secretBtn">A tiny secret for you 💌</button>
+ </div>
+</section>
+<footer><div class="script">Made with love, by Koushik</div><p>Happy Birthday, Kakali! ❤️</p></footer>
+
+<div class="modal" id="modal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+ <div class="modal-card">
+  <div style="font-size:2.6rem">💗✨🌹</div>
+  <div class="script" id="modalTitle">You are special, Kakali</div>
+  <p style="line-height:1.8;color:#f7e4ed">If I could gift you one thing, it would be the ability to see yourself through my eyes — so you would know how wonderful you are. Never forget that someone is cheering for you. ❤️</p>
+  <button class="btn" id="closeModal">Close with a smile</button>
+ </div>
+</div>
+<script>
+const $=id=>document.getElementById(id);
+let audioCtx=null, musicTimer=null, musicOn=false, noteIndex=0;
+// A gentle, original synthesized birthday-style melody. No external audio file required.
+const melody=[523.25,523.25,587.33,523.25,698.46,659.25,523.25,523.25,587.33,523.25,783.99,698.46,523.25,523.25,1046.5,880,698.46,659.25,587.33,932.33,932.33,880,698.46,783.99,698.46];
+function playNote(freq,duration=.32){
+ if(!audioCtx)return;
+ const osc=audioCtx.createOscillator(), gain=audioCtx.createGain();
+ osc.type='sine';osc.frequency.value=freq;
+ gain.gain.setValueAtTime(.0001,audioCtx.currentTime);
+ gain.gain.exponentialRampToValueAtTime(.075,audioCtx.currentTime+.025);
+ gain.gain.exponentialRampToValueAtTime(.0001,audioCtx.currentTime+duration);
+ osc.connect(gain);gain.connect(audioCtx.destination);
+ osc.start();osc.stop(audioCtx.currentTime+duration+.03);
+}
+function toggleMusic(){
+ if(!audioCtx)audioCtx=new (window.AudioContext||window.webkitAudioContext)();
+ if(audioCtx.state==='suspended')audioCtx.resume();
+ if(musicOn){clearInterval(musicTimer);musicOn=false;$('musicStatus').textContent='♫ Melody paused — tap the button to play';$('openBtn').textContent='Play birthday melody ♫';return}
+ musicOn=true;$('musicStatus').textContent='♫ A little birthday melody is playing';$('openBtn').textContent='Pause birthday melody ♪';
+ musicTimer=setInterval(()=>{playNote(melody[noteIndex%melody.length],.29);noteIndex++;},390);
+}
+$('openBtn').addEventListener('click',()=>{if(!musicOn)toggleMusic();$('celebrate').scrollIntoView({behavior:'smooth'});confettiBurst();});
+$('candles').addEventListener('click',()=>{$('candles').textContent='✨ 💨 ✨';$('candleHint').textContent='Wish made! May it come true, Kakali. 💗';confettiBurst();});
+$('wishBtn').addEventListener('click',()=>{$('wishMessage').textContent='May all your heart’s wishes bloom into reality. 🌸';confettiBurst();});
+$('hugBtn').addEventListener('click',()=>{$('wishMessage').textContent='Sending you the biggest, warmest birthday hug! 🤗💗';hearts(14);});
+$('secretBtn').addEventListener('click',()=>{$('modal').classList.add('show');hearts(22);});
+$('closeModal').addEventListener('click',()=>$('modal').classList.remove('show'));
+$('modal').addEventListener('click',e=>{if(e.target===$('modal'))$('modal').classList.remove('show')});
+function hearts(n=1){const icons=['💗','💕','♡','🌸','✨'];for(let i=0;i<n;i++){const el=document.createElement('div');el.className='float';el.textContent=icons[Math.floor(Math.random()*icons.length)];el.style.left=Math.random()*100+'vw';el.style.fontSize=(16+Math.random()*22)+'px';el.style.animationDuration=(4+Math.random()*4)+'s';document.body.appendChild(el);setTimeout(()=>el.remove(),8500)}}
+function confettiBurst(){for(let i=0;i<95;i++){const el=document.createElement('i');el.className='confetti';el.style.left=Math.random()*100+'vw';el.style.background=['#ff8eb5','#ffd99a','#c8a6ff','#fff0f5','#f76d9f'][i%5];el.style.animationDelay=Math.random()*.9+'s';el.style.animationDuration=(2.4+Math.random()*2)+'s';document.body.appendChild(el);setTimeout(()=>el.remove(),5000)}}
+setInterval(()=>{if(Math.random()>.25)hearts(1)},1800);
+</script>
+</body>
+</html>
